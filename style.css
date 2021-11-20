@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./back-img.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color:white;
+}
+.loader-container{
+    display: none;
+}
+
+.loader{
+    width:10px;
+    height:20px;
+    background: crimson;
+    margin: 4px;
+    animation: loading 1s ease-in-out infinite alternate;
+}
+.loader1{
+
+    animation: loading 1s ease-in-out infinite alternate;
+}
+.loader2{
+    animation: loading 1s ease-in-out infinite alternate 0.5s;
+    
+}
+.loader3{
+    animation: loading 1s ease-in-out infinite alternate 0.8s;
+    
+}
+.main-container{
+    min-height: 50vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} 
+h1{
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    margin:3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.ip-display,
+.location-display,
+.geo-display{
+    color: white;
+    font-size: 2rem;
+}
+.lookup-btm{
+    border: none;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 3rem,2rem;
+    border-radius: 40px;
+    cursor: pointer;
+    transition:opacity 250ms linear;
+
+
+}
+.lookup-btm:hover{
+    opacity: 0.8;
+}
+@keyframes loading{
+    from{
+        transform: scale(1);
+
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
+
